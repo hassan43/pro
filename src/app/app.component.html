@@ -1,0 +1,80 @@
+<h1>Angular</h1>
+
+<hr>
+<br>
+<mat-slider min="1" max="100" step="1" value="1"></mat-slider>
+
+<hr>
+<br>
+<button mat-raised-button>my material</button>
+
+
+<hr>
+<br>
+<span matBadge="4">notification</span>
+<mat-spinner></mat-spinner>
+
+<hr>
+<br>
+<mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+
+<hr>
+<br>
+<mat-chip-list aria-label="Fish selection">
+  <mat-chip>One fish</mat-chip>
+  <mat-chip>Two fish</mat-chip>
+  <mat-chip color="primary" selected>Primary fish</mat-chip>
+  <mat-chip color="accent" selected>Accent fish</mat-chip>
+</mat-chip-list>
+
+<hr>
+<br>
+<mat-tab-group>
+  <mat-tab label="First"> Content 1 </mat-tab>
+  <mat-tab label="Second"> Content 2 </mat-tab>
+  <mat-tab label="Third"> Content 3 </mat-tab>
+</mat-tab-group>
+
+<hr>
+<br>
+<mat-vertical-stepper>
+  <mat-step label="Step 1">
+    Content 1
+  </mat-step>
+  <mat-step label="Step 1">
+    Content 2
+  </mat-step>
+</mat-vertical-stepper>
+
+<hr>
+<br>
+<mat-horizontal-stepper>
+  <mat-step label="store">
+    name
+    <div>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+  <mat-step label="bill">
+    details
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+  <mat-step label="items">
+    item
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>
+
+<hr>
+<br>
+<mat-form-field>
+  <mat-label>Choose a date</mat-label>
+  <input matInput [matDatepicker]="picker">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
